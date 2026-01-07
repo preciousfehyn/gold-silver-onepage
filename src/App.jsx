@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 
-
 const BRAND = {
   name: "Gold&Silver",
   handle: "@gldsilver",
@@ -8,15 +7,17 @@ const BRAND = {
 };
 
 // Put your real X profile URL here later
-const X_URL = "https://x.com/";
+const X_URL = "https://x.com/gldsilver";
 
 // Assets (update filenames if yours differ)
 const ASSETS = {
-  hero: "/src/assets/hero-bg.png",
-  featured: "/src/assets/featured-bg.png",
-  g1: "/src/assets/silver-vs-nvidia.png",
-  g2: "/src/assets/silver-queue.png",
-  g3: "/src/assets/world-silver-reserves.png",
+  hero: "/src/assets/hero-bg.jpeg",
+  featured: "/src/assets/featured-bg.jpeg",
+  g1: "/src/assets/silver-vs-nvidia.jpeg",
+  g2: "/src/assets/silver-queue.jpeg",
+  g3: "/src/assets/world-silver-reserves.jpeg",
+  g4: "/src/assets/world-gold-reserves.jpeg",
+  g5: "/src/assets/gold-silver-ribbon.jpeg",
   logo: "/logo.png",
 };
 
@@ -54,16 +55,20 @@ export default function App() {
         title: "Silver vs NVIDIA",
         caption: "Perspective shift: real assets vs market darlings.",
         img: ASSETS.g1,
+        link:
+          "https://www.msn.com/en-in/lifestyle/pets-animals/silver-overtakes-nvidia-the-4-7-trillion-market-cap-tussle-nobody-saw-coming/ar-AA1TbKSG?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
       },
       {
-        title: "Smart money vs late money",
-        caption: "Positioning happens early. The crowd arrives later.",
+        title: "World Gold Reserves",
+        caption: "Global distribution of gold reserves by country.",
         img: ASSETS.g2,
+        link: "https://www.gold.org/goldhub/data/gold-reserves-by-country",
       },
       {
         title: "World Silver Reserves",
         caption: "Global distribution of silver reserves by country.",
         img: ASSETS.g3,
+        link: "https://worldpopulationreview.com/country-rankings/silver-reserves-by-country",
       },
     ],
     []
@@ -80,7 +85,11 @@ export default function App() {
       <TopNav navOpen={navOpen} setNavOpen={setNavOpen} />
 
       {/* HERO */}
-      <SectionBG id="home" bg={ASSETS.hero} className="min-h-[92vh] flex items-center">
+      <SectionBG
+        id="home"
+        bg={ASSETS.hero}
+        className="min-h-[92vh] flex items-center"
+      >
         <div className="max-w-6xl mx-auto px-5 sm:px-6 py-16 w-full">
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7">
@@ -90,11 +99,14 @@ export default function App() {
 
               <h1 className="mt-4 font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">
                 {BRAND.name} Intelligence
-                <span className="block text-amber-300">for real-asset conviction.</span>
+                <span className="block text-amber-300">
+                  for real-asset conviction.
+                </span>
               </h1>
 
               <p className="mt-5 text-zinc-200/90 max-w-xl">
-                Clean visuals, breaking levels, and macro context — designed for fast reading on any screen.
+                Clean visuals, breaking levels, and macro context — designed for
+                fast reading on any screen.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -135,7 +147,9 @@ export default function App() {
                 <div className="brand-divider my-6" />
 
                 <p className="text-sm text-zinc-300/90">
-                  <span className="text-amber-300 font-semibold">{BRAND.tagline}</span>{" "}
+                  <span className="text-amber-300 font-semibold">
+                    {BRAND.tagline}
+                  </span>{" "}
                   No noise. Just signal.
                 </p>
               </div>
@@ -149,9 +163,10 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="flex items-end justify-between gap-4 flex-wrap">
             <div>
-              <h2 className="font-serif text-2xl sm:text-3xl">Live Gold & Silver</h2>
-              <p className="mt-2 text-zinc-400 max-w-2xl">
-              </p>
+              <h2 className="font-serif text-2xl sm:text-3xl">
+                Live Gold & Silver
+              </h2>
+              <p className="mt-2 text-zinc-400 max-w-2xl"></p>
             </div>
           </div>
 
@@ -172,8 +187,8 @@ export default function App() {
               Big levels change positioning.
             </h2>
             <p className="mt-4 text-zinc-200/90">
-              The headline is the breakout. The signal is what happens next: follow-through, retrace behavior,
-              and how liquidity responds.
+              The headline is the breakout. The signal is what happens next:
+              follow-through, retrace behavior, and how liquidity responds.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -201,12 +216,15 @@ export default function App() {
             Tap to view full-size. Built to look clean on mobile and desktop.
           </p>
 
+          {/* ✅ PATCH: make gallery cards <a> links (no lightbox click interception) */}
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {gallery.map((g) => (
-              <button
+              <a
                 key={g.title}
-                onClick={() => setLightbox(g)}
-                className="text-left rounded-2xl overflow-hidden brand-border bg-zinc-950/40 hover:bg-zinc-950/60 transition"
+                href={g.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-left rounded-2xl overflow-hidden brand-border bg-zinc-950/40 hover:bg-zinc-950/60 transition"
               >
                 <div
                   className="h-44 sm:h-48 bg-center bg-cover"
@@ -216,7 +234,7 @@ export default function App() {
                   <div className="font-semibold">{g.title}</div>
                   <div className="mt-1 text-sm text-zinc-400">{g.caption}</div>
                 </div>
-              </button>
+              </a>
             ))}
           </div>
         </div>
@@ -234,18 +252,31 @@ export default function App() {
             {posts.map((p) => (
               <article
                 key={p.title}
-                className="rounded-2xl p-6 sm:p-7 brand-border bg-zinc-950/40"
+                className="relative rounded-2xl overflow-hidden brand-border shadow-glow"
               >
-                <div className="flex items-start justify-between gap-4 flex-wrap">
-                  <h3 className="font-serif text-xl sm:text-2xl">{p.title}</h3>
-                  <span className="text-sm text-zinc-400">{p.date}</span>
+                {/* Background image */}
+                <div
+                  className="absolute inset-0 bg-center bg-cover"
+                  style={{ backgroundImage: `url(${ASSETS.g5})` }}
+                />
+
+                {/* Dark overlay for readability */}
+                <div className="absolute inset-0 bg-black/70" />
+
+                {/* Content */}
+                <div className="relative p-6 sm:p-7">
+                  <div className="flex items-start justify-between gap-4 flex-wrap">
+                    <h3 className="font-serif text-xl sm:text-2xl">{p.title}</h3>
+                    <span className="text-sm text-zinc-300/80">{p.date}</span>
+                  </div>
+                  <p className="mt-3 text-zinc-200/90 leading-relaxed">{p.text}</p>
                 </div>
-                <p className="mt-3 text-zinc-200/90 leading-relaxed">{p.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* MEDIA KIT */}
       <section id="media-kit" className="py-16">
@@ -300,7 +331,11 @@ export default function App() {
                 Close
               </button>
             </div>
-            <img src={lightbox.img} alt={lightbox.title} className="w-full h-auto" />
+            <img
+              src={lightbox.img}
+              alt={lightbox.title}
+              className="w-full h-auto"
+            />
           </div>
         </div>
       )}
@@ -564,7 +599,8 @@ function LivePrices() {
             <p className="mt-2 text-sm text-zinc-200/80">
               {data.mode === "live" ? (
                 <>
-                  Updated {data.lastUpdated ? data.lastUpdated.toLocaleTimeString() : ""}{" "}
+                  Updated{" "}
+                  {data.lastUpdated ? data.lastUpdated.toLocaleTimeString() : ""}{" "}
                   {data.cached ? "• cached" : "• live"}
                 </>
               ) : data.mode === "loading" ? (
@@ -669,12 +705,18 @@ function PriceTile({ label, value, accent, pulse, delta, sessionHigh, sessionLow
         <div className="mt-3 text-4xl sm:text-5xl font-semibold">{value}</div>
 
         <div className="mt-3 flex items-center justify-between gap-3 flex-wrap">
-          <p className="text-sm text-zinc-200/75">
-            Spot • Troy ounce (toz)
-          </p>
+          <p className="text-sm text-zinc-200/75">Spot • Troy ounce (toz)</p>
 
           <div className="text-sm font-medium">
-            <span className={dir === "up" ? "text-emerald-300" : dir === "down" ? "text-red-300" : "text-zinc-300"}>
+            <span
+              className={
+                dir === "up"
+                  ? "text-emerald-300"
+                  : dir === "down"
+                  ? "text-red-300"
+                  : "text-zinc-300"
+              }
+            >
               {pctText}
             </span>
             <span className="text-zinc-300/70"> ({moveText})</span>
@@ -683,11 +725,15 @@ function PriceTile({ label, value, accent, pulse, delta, sessionHigh, sessionLow
 
         <div className="mt-4 grid grid-cols-2 gap-3">
           <div className="rounded-xl bg-black/35 brand-border p-3">
-            <div className="text-xs tracking-luxury uppercase text-zinc-300/70">Session High</div>
+            <div className="text-xs tracking-luxury uppercase text-zinc-300/70">
+              Session High
+            </div>
             <div className="mt-1 text-sm font-semibold text-zinc-100">{hi}</div>
           </div>
           <div className="rounded-xl bg-black/35 brand-border p-3">
-            <div className="text-xs tracking-luxury uppercase text-zinc-300/70">Session Low</div>
+            <div className="text-xs tracking-luxury uppercase text-zinc-300/70">
+              Session Low
+            </div>
             <div className="mt-1 text-sm font-semibold text-zinc-100">{lo}</div>
           </div>
         </div>
@@ -695,7 +741,6 @@ function PriceTile({ label, value, accent, pulse, delta, sessionHigh, sessionLow
     </div>
   );
 }
-
 
 function formatMoney(value, currency = "USD") {
   try {
@@ -717,9 +762,15 @@ function Footer() {
           © {new Date().getFullYear()} Gold&Silver • {BRAND.handle}
         </p>
         <div className="text-sm text-zinc-500 flex gap-4">
-          <a className="hover:text-zinc-300" href="#prices">Prices</a>
-          <a className="hover:text-zinc-300" href="#charts">Charts</a>
-          <a className="hover:text-zinc-300" href="#media-kit">Media Kit</a>
+          <a className="hover:text-zinc-300" href="#prices">
+            Prices
+          </a>
+          <a className="hover:text-zinc-300" href="#charts">
+            Charts
+          </a>
+          <a className="hover:text-zinc-300" href="#media-kit">
+            Media Kit
+          </a>
         </div>
       </div>
     </footer>
