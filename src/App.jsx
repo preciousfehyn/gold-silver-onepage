@@ -11,13 +11,13 @@ const X_URL = "https://x.com/gldsilver";
 
 // Assets (update filenames if yours differ)
 const ASSETS = {
-  hero: "/src/assets/hero-bg.jpeg",
-  featured: "/src/assets/featured-bg.jpeg",
-  g1: "/src/assets/silver-vs-nvidia.jpeg",
-  g2: "/src/assets/silver-queue.jpeg",
-  g3: "/src/assets/world-silver-reserves.jpeg",
-  g4: "/src/assets/world-gold-reserves.jpeg",
-  g5: "/src/assets/gold-silver-ribbon.jpeg",
+  hero: "/assets/hero-bg.jpeg",
+  featured: "/assets/featured-bg.jpeg",
+  g1: "/assets/silver-vs-nvidia.jpeg",
+  g2: "/assets/silver-queue.jpeg",
+  g3: "/assets/world-silver-reserves.jpeg",
+  g4: "/assets/world-gold-reserves.jpeg",
+  g5: "/assets/gold-silver-ribbon.jpeg",
   logo: "/logo.png",
 };
 
