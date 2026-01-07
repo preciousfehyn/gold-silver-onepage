@@ -117,12 +117,6 @@ export default function App() {
                   Live Prices
                 </a>
                 <a
-                  href="#charts"
-                  className="px-5 py-3 rounded-xl brand-border glass hover:bg-white/10 transition"
-                >
-                  Explore Visuals
-                </a>
-                <a
                   href={X_URL}
                   target="_blank"
                   rel="noreferrer"
