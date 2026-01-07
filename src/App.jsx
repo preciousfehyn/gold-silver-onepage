@@ -18,6 +18,7 @@ const ASSETS = {
   g3: "/assets/world-silver-reserves.jpeg",
   g4: "/assets/world-gold-reserves.jpeg",
   g5: "/assets/gold-silver-ribbon.jpeg",
+  g6: "/assets/Xgldsilverlogo.png",
   logo: "/logo.png",
 };
 
@@ -28,22 +29,22 @@ export default function App() {
   const posts = useMemo(
     () => [
       {
-        title: "Gold above major levels: what matters next",
+        title: "Potential for extreme silver upside exists",
         date: "Jan 2026",
         text:
-          "The level is the headline. The follow-through is the signal. Watch liquidity, real rates, and whether risk-on rotates into metals or away from it.",
+          "some analysts forecast peaks of $100–$150 or even higher based on historical gold/silver ratios and short squeezes.",
       },
       {
-        title: "Silver: supply reality vs paper narrative",
+        title: "Commodity index rebalancing in January 2026",
         date: "Jan 2026",
         text:
-          "Silver moves late — then violently. Industrial demand plus investment demand is the combo. The key question: who owns physical when the crowd arrives?",
+          "causing short-term sell pressure and volatility in gold and silver futures.",
       },
       {
-        title: "3 macro signals we track weekly",
+        title: "Bullish price forecasts dominate for gold in 2026",
         date: "Jan 2026",
         text:
-          "Dollar trend, real yields direction, and credit/risk appetite. Metals don’t just react — they often lead the narrative shift.",
+          "with major banks like Bank of America, J.P. Morgan, and Morgan Stanley predicting averages or targets around $4,800–$5,000 per ounce amid ongoing central bank buying and hedging demand.",
       },
     ],
     []
@@ -94,19 +95,19 @@ export default function App() {
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7">
               <p className="text-xs tracking-luxury uppercase text-amber-300/90">
-                {BRAND.handle} • Gold • Silver • Macro
+                {BRAND.handle} • Gold • Silver • Market Insights
               </p>
 
               <h1 className="mt-4 font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">
-                {BRAND.name} Intelligence
+                {BRAND.name} Intelligence. 
                 <span className="block text-amber-300">
-                  for real-asset conviction.
+                  Real assets. Real conviction.
                 </span>
               </h1>
 
               <p className="mt-5 text-zinc-200/90 max-w-xl">
-                Clean visuals, breaking levels, and macro context — designed for
-                fast reading on any screen.
+                The final asset class when everything else is questioned. 
+                Timeless, sovereign, and impossible to dilute. 
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -133,9 +134,9 @@ export default function App() {
                   Today’s Focus
                 </p>
                 <div className="mt-3 space-y-3 text-zinc-200/90">
-                  <Bullet>Macro drivers behind the move</Bullet>
-                  <Bullet>Key levels & positioning</Bullet>
-                  <Bullet>Charts built for fast clarity</Bullet>
+                  <Bullet>Record highs from 2025 continue into early 2026</Bullet>
+                  <Bullet>Central banks and investors diversify into precious metals</Bullet>
+                  <Bullet>Silver outperforms expectations</Bullet>
                 </div>
 
                 <div className="brand-divider my-6" />
@@ -158,7 +159,7 @@ export default function App() {
           <div className="flex items-end justify-between gap-4 flex-wrap">
             <div>
               <h2 className="font-serif text-2xl sm:text-3xl">
-                Live Gold & Silver
+                Live Gold & Silver Price Update
               </h2>
               <p className="mt-2 text-zinc-400 max-w-2xl"></p>
             </div>
@@ -181,8 +182,9 @@ export default function App() {
               Big levels change positioning.
             </h2>
             <p className="mt-4 text-zinc-200/90">
-              The headline is the breakout. The signal is what happens next:
-              follow-through, retrace behavior, and how liquidity responds.
+              Central banks and investors diversify into precious metals,
+              viewing gold as a core hedge and silver as higher-risk/higher-reward
+              amid inflation and de-dollarization trends.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -192,10 +194,10 @@ export default function App() {
                 Read the Blog
               </a>
               <a
-                href="#charts"
+                href="#insights"
                 className="px-5 py-3 rounded-xl brand-border glass hover:bg-white/10 transition"
               >
-                See the charts
+                See insights
               </a>
             </div>
           </div>
@@ -203,11 +205,11 @@ export default function App() {
       </SectionBG>
 
       {/* GALLERY */}
-      <section id="charts" className="py-16">
+      <section id="insights" className="py-16">
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <h2 className="font-serif text-2xl sm:text-3xl">Charts & Visuals</h2>
+          <h2 className="font-serif text-2xl sm:text-3xl">What to Know </h2>
           <p className="mt-2 text-zinc-400 max-w-2xl">
-            Tap to view full-size. Built to look clean on mobile and desktop.
+            Clear, current insights into the precious metals market.
           </p>
 
           {/* ✅ PATCH: make gallery cards <a> links (no lightbox click interception) */}
@@ -271,35 +273,44 @@ export default function App() {
         </div>
       </section>
 
-
-      {/* MEDIA KIT */}
-      <section id="media-kit" className="py-16">
+      {/* Social */}
+      <section id="social" className="py-16">
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="rounded-2xl p-7 sm:p-10 bg-zinc-950/50 brand-border shadow-glow flex items-center justify-between gap-6 flex-wrap">
             <div>
               <p className="text-xs tracking-luxury uppercase text-amber-300/90">
-                For Press & Partners
+                Social
               </p>
               <h2 className="mt-2 font-serif text-2xl sm:text-3xl">
-                Download the Gold & Silver Media Kit
+                Follow Gold & Silver on X
               </h2>
               <p className="mt-3 text-zinc-400 max-w-xl">
-                High-resolution charts, brand assets, and official visuals.
+                SuperFast ⚡️ $GOLD & $SILVER news, macro insights, and real-asset conviction.
               </p>
             </div>
 
+            {/* X Logo Image Link */}
             <a
-              href="/media-kit.zip"
-              className="px-6 py-3 rounded-xl bg-amber-500 text-black font-semibold hover:bg-amber-400 transition"
-              title="Place media-kit.zip in /public to enable"
+              href="https://x.com/gldsilver"
+              target="_blank"
+              rel="noreferrer"
+              className="block"
+              aria-label="Follow @gldsilver on X"
             >
-              Download Media Kit
+              <img
+                src={ASSETS.g6}
+                alt="@gldsilver on X"
+                className="h-32 sm:h-40 w-auto rounded-xl hover:scale-105 transition-transform shadow-glow"
+                loading="lazy"
+                draggable="false"
+              />
             </a>
           </div>
         </div>
       </section>
 
       <Footer />
+
 
       {/* LIGHTBOX */}
       {lightbox && (
@@ -344,9 +355,9 @@ function TopNav({ navOpen, setNavOpen }) {
     { label: "Home", href: "#home" },
     { label: "Prices", href: "#prices" },
     { label: "Featured", href: "#featured" },
-    { label: "Charts", href: "#charts" },
+    { label: "Insights", href: "#insights" },
     { label: "Blog", href: "#blog" },
-    { label: "Media Kit", href: "#media-kit" },
+    { label: "Social", href: "#social" },
   ];
 
   return (
@@ -759,11 +770,11 @@ function Footer() {
           <a className="hover:text-zinc-300" href="#prices">
             Prices
           </a>
-          <a className="hover:text-zinc-300" href="#charts">
-            Charts
+          <a className="hover:text-zinc-300" href="#insights">
+            Insights
           </a>
-          <a className="hover:text-zinc-300" href="#media-kit">
-            Media Kit
+          <a className="hover:text-zinc-300" href="#social">
+            Social
           </a>
         </div>
       </div>
