@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
+
 const BRAND = {
   name: "Gold&Silver",
   handle: "@gldsilver",
@@ -16,6 +17,7 @@ const ASSETS = {
   g1: "/src/assets/silver-vs-nvidia.png",
   g2: "/src/assets/silver-queue.png",
   g3: "/src/assets/world-silver-reserves.png",
+  logo: "/logo.png",
 };
 
 export default function App() {
@@ -322,8 +324,14 @@ function TopNav({ navOpen, setNavOpen }) {
     <header className="sticky top-0 z-40 bg-black/60 backdrop-blur-md border-b border-amber-500/15">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 py-3 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3">
-          <div className="h-9 w-9 rounded-xl bg-amber-500/15 brand-border grid place-items-center">
-            <span className="text-amber-300 font-semibold">G</span>
+          <div className="h-9 w-9 rounded-full bg-amber-500/15 brand-border overflow-hidden grid place-items-center">
+            <img
+              src={ASSETS.logo}
+              alt="Gold&Silver logo"
+              className="h-full w-full object-cover"
+              loading="lazy"
+              draggable="false"
+            />
           </div>
           <div className="leading-tight">
             <div className="font-semibold">{BRAND.name}</div>
