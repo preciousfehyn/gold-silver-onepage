@@ -285,7 +285,7 @@ export default function App() {
                 Follow Gold & Silver on X
               </h2>
               <p className="mt-3 text-zinc-400 max-w-xl">
-                SuperFast ⚡️ $GOLD & $SILVER news, macro insights, and real-asset conviction.
+                SuperFast⚡️$GOLD & $SILVER news and Price tracker.
               </p>
             </div>
 
