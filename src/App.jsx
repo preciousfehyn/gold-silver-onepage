@@ -300,7 +300,7 @@ export default function App() {
               <img
                 src={ASSETS.g6}
                 alt="@gldsilver on X"
-                className="h-32 sm:h-40 w-auto rounded-xl hover:scale-105 transition-transform shadow-glow"
+                className="h-30 sm:h-20 w-auto rounded-xl hover:scale-105 transition-transform shadow-glow"
                 loading="lazy"
                 draggable="false"
               />
