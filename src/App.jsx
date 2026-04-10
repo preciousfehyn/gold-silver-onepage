@@ -29,22 +29,22 @@ export default function App() {
   const posts = useMemo(
     () => [
       {
-        title: "Potential for extreme silver upside exists",
-        date: "Jan 2026",
+        title: "Gold hits $4,749 as US-Iran ceasefire tensions persist",
+        date: "Apr 2026",
         text:
-          "some analysts forecast peaks of $100–$150 or even higher based on historical gold/silver ratios and short squeezes.",
+          "Gold pulled back to $4,749/oz on April 10 after a brief 3.3% spike to $4,850 following the US-Iran ceasefire announcement. Profit-taking and a stronger dollar are capping gains, but geopolitical risk keeps the floor elevated.",
       },
       {
-        title: "Commodity index rebalancing in January 2026",
-        date: "Jan 2026",
+        title: "Silver surges to $74.50 on Middle East risk premium",
+        date: "Apr 2026",
         text:
-          "causing short-term sell pressure and volatility in gold and silver futures.",
+          "Silver climbed to $74.50/oz amid fragile ceasefire negotiations and escalating Middle East tensions. A breakout above $77 — hit on April 8 — remains the key level to watch for the next leg higher.",
       },
       {
-        title: "Bullish price forecasts dominate for gold in 2026",
-        date: "Jan 2026",
+        title: "Goldman Sachs raises gold target to $5,400 by year-end",
+        date: "Apr 2026",
         text:
-          "with major banks like Bank of America, J.P. Morgan, and Morgan Stanley predicting averages or targets around $4,800–$5,000 per ounce amid ongoing central bank buying and hedging demand.",
+          "Goldman Sachs lifted its 2026 year-end gold target to $5,400, citing persistent central bank buying and investor hedging. Bank of America sees $6,000 possible by spring. The all-time high of $5,595 set in January 2026 is firmly in range.",
       },
     ],
     []
@@ -134,9 +134,9 @@ export default function App() {
                   Today’s Focus
                 </p>
                 <div className="mt-3 space-y-3 text-zinc-200/90">
-                  <Bullet>Record highs from 2025 continue into early 2026</Bullet>
-                  <Bullet>Central banks and investors diversify into precious metals</Bullet>
-                  <Bullet>Silver outperforms expectations</Bullet>
+                  <Bullet>Gold at $4,749 — pulling back from $4,850 post-ceasefire spike</Bullet>
+                  <Bullet>Silver at $74.50 — Middle East risk premium keeps bid firm</Bullet>
+                  <Bullet>Goldman targets $5,400 gold by year-end 2026</Bullet>
                 </div>
 
                 <div className="brand-divider my-6" />
