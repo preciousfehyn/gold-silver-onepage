@@ -29,22 +29,22 @@ export default function App() {
   const posts = useMemo(
     () => [
       {
-        title: "Gold hits $4,749 as US-Iran ceasefire tensions persist",
+        title: "Gold holds $4,760 as markets re-open Monday — range $4,700–$4,820 in play",
         date: "Apr 2026",
         text:
-          "Gold pulled back to $4,749/oz on April 10 after a brief 3.3% spike to $4,850 following the US-Iran ceasefire announcement. Profit-taking and a stronger dollar are capping gains, but geopolitical risk keeps the floor elevated.",
+          "Gold closed Friday at $4,766/oz and is expected to resume trading April 13 within the $4,701–$4,822 range. Weekend geopolitical noise from the Middle East — including Trump's escalation warnings and Israel's Lebanon strikes — keeps the floor firm despite dollar strength capping the upside.",
       },
       {
-        title: "Silver surges to $74.50 on Middle East risk premium",
+        title: "Silver up 136% year-on-year — $76 holds as industrial demand surges",
         date: "Apr 2026",
         text:
-          "Silver climbed to $74.50/oz amid fragile ceasefire negotiations and escalating Middle East tensions. A breakout above $77 — hit on April 8 — remains the key level to watch for the next leg higher.",
+          "Silver traded at $76.26/oz on April 10, up 1.25% on the day and a staggering 136% higher than a year ago. Solar and EV demand continues to outpace supply, while the Middle East risk premium adds speculative fuel. The $77 level hit on April 8 post-ceasefire remains the key short-term breakout target.",
       },
       {
-        title: "Goldman Sachs raises gold target to $5,400 by year-end",
+        title: "Analysts eye $7,000 gold — Fibonacci extensions point to $155 silver",
         date: "Apr 2026",
         text:
-          "Goldman Sachs lifted its 2026 year-end gold target to $5,400, citing persistent central bank buying and investor hedging. Bank of America sees $6,000 possible by spring. The all-time high of $5,595 set in January 2026 is firmly in range.",
+          "With Goldman targeting $5,400 and Bank of America flagging $6,000, some technical analysts are stretching Fibonacci extensions to project gold at $7,000 and silver at $155/oz. Central bank buying, de-dollarization, and persistent geopolitical risk underpin the bull case. The 2026 all-time highs are now the floor, not the ceiling.",
       },
     ],
     []
@@ -134,9 +134,9 @@ export default function App() {
                   Today’s Focus
                 </p>
                 <div className="mt-3 space-y-3 text-zinc-200/90">
-                  <Bullet>Gold at $4,749 — pulling back from $4,850 post-ceasefire spike</Bullet>
-                  <Bullet>Silver at $74.50 — Middle East risk premium keeps bid firm</Bullet>
-                  <Bullet>Goldman targets $5,400 gold by year-end 2026</Bullet>
+                  <Bullet>Gold at $4,766 — Apr 13 range: $4,701–$4,822 (non-trading weekend)</Bullet>
+                  <Bullet>Silver at $76.26 — up 136% YoY, $77 breakout level in sight</Bullet>
+                  <Bullet>Analysts project $7,000 gold &amp; $155 silver on Fibonacci extension</Bullet>
                 </div>
 
                 <div className="brand-divider my-6" />
