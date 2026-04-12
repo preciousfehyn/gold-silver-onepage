@@ -761,21 +761,15 @@ function formatMoney(value, currency = "USD") {
 
 function Footer() {
   return (
-    <footer className="py-10 border-t border-amber-500/15">
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 flex items-center justify-between flex-wrap gap-4">
-        <p className="text-sm text-zinc-500">
+    <footer className="py-3 border-t border-amber-500/15">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 flex items-center justify-between flex-wrap gap-2">
+        <p className="text-xs text-zinc-500">
           © {new Date().getFullYear()} Gold&Silver • {BRAND.handle}
         </p>
-        <div className="text-sm text-zinc-500 flex gap-4">
-          <a className="hover:text-zinc-300" href="#prices">
-            Prices
-          </a>
-          <a className="hover:text-zinc-300" href="#insights">
-            Insights
-          </a>
-          <a className="hover:text-zinc-300" href="#social">
-            Social
-          </a>
+        <div className="text-xs text-zinc-500 flex gap-3">
+          <a className="hover:text-zinc-300" href="#prices">Prices</a>
+          <a className="hover:text-zinc-300" href="#insights">Insights</a>
+          <a className="hover:text-zinc-300" href="#social">Social</a>
         </div>
       </div>
     </footer>
