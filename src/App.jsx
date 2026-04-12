@@ -29,22 +29,22 @@ export default function App() {
   const posts = useMemo(
     () => [
       {
-        title: "Gold holds $4,760 as markets re-open Monday — range $4,700–$4,820 in play",
-        date: "Apr 2026",
+        title: "Gold steadies at $4,751 as US-Iran ceasefire talks begin in Islamabad",
+        date: "Apr 12, 2026",
         text:
-          "Gold closed Friday at $4,766/oz and is expected to resume trading April 13 within the $4,701–$4,822 range. Weekend geopolitical noise from the Middle East — including Trump's escalation warnings and Israel's Lebanon strikes — keeps the floor firm despite dollar strength capping the upside.",
+          "International spot gold held at $4,751/oz this Sunday as traders swung between caution and relief after Washington and Tehran opened direct ceasefire negotiations in Islamabad. Weekly gain: ~2%. The fragile truce prompted some profit-taking as risk appetite returned, but analysts warn any breakdown restores the flight-to-safety bid instantly. Key support: $4,700. Resistance: $4,820.",
       },
       {
-        title: "Silver up 136% year-on-year — $76 holds as industrial demand surges",
-        date: "Apr 2026",
+        title: "Silver forecast to hit $77 by mid-week — CoinCodex model projects $104 by year-end",
+        date: "Apr 12, 2026",
         text:
-          "Silver traded at $76.26/oz on April 10, up 1.25% on the day and a staggering 136% higher than a year ago. Solar and EV demand continues to outpace supply, while the Middle East risk premium adds speculative fuel. The $77 level hit on April 8 post-ceasefire remains the key short-term breakout target.",
+          "Silver is trading near $76/oz with algorithm models calling for $77.04 by April 16. Supply tightness driven by solar panel and EV battery demand shows no sign of easing, while the ceasefire-led dip has been bought aggressively by industrial users. SD Bullion notes all-time highs were set in early 2026 amid geopolitical events and supply shortages — the structural bull case remains intact regardless of near-term peace talk volatility.",
       },
       {
-        title: "Analysts eye $7,000 gold — Fibonacci extensions point to $155 silver",
-        date: "Apr 2026",
+        title: "Sovereign gold rush: central banks and de-dollarization rewrote precious metals — bulls target $5,400–$6,300",
+        date: "Apr 9, 2026",
         text:
-          "With Goldman targeting $5,400 and Bank of America flagging $6,000, some technical analysts are stretching Fibonacci extensions to project gold at $7,000 and silver at $155/oz. Central bank buying, de-dollarization, and persistent geopolitical risk underpin the bull case. The 2026 all-time highs are now the floor, not the ceiling.",
+          "Major bank consensus for 2026 gold now clusters between $5,400 (Goldman) and $6,300 (BofA), driven by central bank accumulation, de-dollarization, and a Fed pivoting dovish. Emerging-market nations are actively replacing USD reserves with physical gold as a strategic sovereignty play. A weaker dollar — a direct tailwind for dollar-denominated gold — and $7.5T sitting in money-market funds awaiting reallocation make this the deepest structural bull case since the 1970s.",
       },
     ],
     []
@@ -134,9 +134,9 @@ export default function App() {
                   Today’s Focus
                 </p>
                 <div className="mt-3 space-y-3 text-zinc-200/90">
-                  <Bullet>Gold at $4,766 — Apr 13 range: $4,701–$4,822 (non-trading weekend)</Bullet>
-                  <Bullet>Silver at $76.26 — up 136% YoY, $77 breakout level in sight</Bullet>
-                  <Bullet>Analysts project $7,000 gold &amp; $155 silver on Fibonacci extension</Bullet>
+                  <Bullet>Gold at $4,751 — steadying as US-Iran ceasefire talks open in Islamabad</Bullet>
+                  <Bullet>Silver near $76 — forecast $77 mid-week; $104 year-end target per CoinCodex</Bullet>
+                  <Bullet>Major banks target $5,400–$6,300 gold on central bank buying &amp; de-dollarization</Bullet>
                 </div>
 
                 <div className="brand-divider my-6" />
