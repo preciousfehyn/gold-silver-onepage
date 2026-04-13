@@ -29,22 +29,22 @@ export default function App() {
   const posts = useMemo(
     () => [
       {
-        title: "Gold steadies at $4,751 as US-Iran ceasefire talks begin in Islamabad",
-        date: "Apr 12, 2026",
+        title: "Gold dips to $4,740 as US-Iran war escalates and ceasefire talks collapse",
+        date: "Apr 13, 2026",
         text:
-          "International spot gold held at $4,751/oz this Sunday as traders swung between caution and relief after Washington and Tehran opened direct ceasefire negotiations in Islamabad. Weekly gain: ~2%. The fragile truce prompted some profit-taking as risk appetite returned, but analysts warn any breakdown restores the flight-to-safety bid instantly. Key support: $4,700. Resistance: $4,820.",
+          "COMEX gold opened Monday down ~1% at $4,740/oz after US-Iran ceasefire negotiations broke down over the weekend, sending crude oil prices surging and reigniting inflation fears. The dollar index strengthened, adding headwinds for dollar-priced bullion. Key support: $4,650–$4,700. A sustained break below $4,650 could accelerate selling toward $4,570. Bulls still point to gold's 46% year-over-year gain as evidence the macro trend remains intact.",
       },
       {
-        title: "Silver forecast to hit $77 by mid-week — CoinCodex model projects $104 by year-end",
-        date: "Apr 12, 2026",
+        title: "Silver slides 2.5% — COMEX drops below $75 as crude surge pressures industrial sentiment",
+        date: "Apr 13, 2026",
         text:
-          "Silver is trading near $76/oz with algorithm models calling for $77.04 by April 16. Supply tightness driven by solar panel and EV battery demand shows no sign of easing, while the ceasefire-led dip has been bought aggressively by industrial users. SD Bullion notes all-time highs were set in early 2026 amid geopolitical events and supply shortages — the structural bull case remains intact regardless of near-term peace talk volatility.",
+          "Silver fell 2.5% on Monday to below $75/oz as soaring crude oil raised concerns about industrial slowdown and rate-cut delays. COMEX silver is trading with a weak undertone, lacking conviction despite long-term structural support from solar, EV, and data-center demand. The Silver Institute projects a 67 million oz supply deficit in 2026. BofA, Citi, and Reuters all maintain aggressive $300 year-end silver targets as COMEX inventory continues to tighten.",
       },
       {
-        title: "Sovereign gold rush: central banks and de-dollarization rewrote precious metals — bulls target $5,400–$6,300",
+        title: "Gold ATH was $5,595 on Jan 29 — now ~15% off peak as geopolitics dominate the tape",
         date: "Apr 9, 2026",
         text:
-          "Major bank consensus for 2026 gold now clusters between $5,400 (Goldman) and $6,300 (BofA), driven by central bank accumulation, de-dollarization, and a Fed pivoting dovish. Emerging-market nations are actively replacing USD reserves with physical gold as a strategic sovereignty play. A weaker dollar — a direct tailwind for dollar-denominated gold — and $7.5T sitting in money-market funds awaiting reallocation make this the deepest structural bull case since the 1970s.",
+          "Gold hit its all-time high of $5,595.42/oz on January 29, 2026 amid peak de-dollarization fears and central bank accumulation. Since then, the US-Iran conflict has whipsawed prices — surging on escalation, retreating on ceasefire hopes. Gold is now ~15% off that ATH, but year-over-year gains remain near 47%. Analysts see the pullback as a buying opportunity with major banks still targeting $5,400–$6,300 on central bank demand and long-term dollar weakness.",
       },
     ],
     []
@@ -134,9 +134,9 @@ export default function App() {
                   Today’s Focus
                 </p>
                 <div className="mt-3 space-y-3 text-zinc-200/90">
-                  <Bullet>Gold at $4,751 — steadying as US-Iran ceasefire talks open in Islamabad</Bullet>
-                  <Bullet>Silver near $76 — forecast $77 mid-week; $104 year-end target per CoinCodex</Bullet>
-                  <Bullet>Major banks target $5,400–$6,300 gold on central bank buying &amp; de-dollarization</Bullet>
+                  <Bullet>Gold at $4,740 — dipping as US-Iran ceasefire talks collapse &amp; crude oil surges</Bullet>
+                  <Bullet>Silver below $75 — down 2.5% on macro pressure; 67M oz deficit still intact long-term</Bullet>
+                  <Bullet>Gold ATH $5,595 (Jan 29); now ~15% off peak — major banks target $5,400–$6,300</Bullet>
                 </div>
 
                 <div className="brand-divider my-6" />
