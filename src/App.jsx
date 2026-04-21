@@ -29,22 +29,22 @@ export default function App() {
   const posts = useMemo(
     () => [
       {
-        title: "Gold dips to $4,740 as US-Iran war escalates and ceasefire talks collapse",
-        date: "Apr 13, 2026",
+        title: "Gold falls to $4,809 as Strait of Hormuz remains open during ceasefire",
+        date: "Apr 20, 2026",
         text:
-          "COMEX gold opened Monday down ~1% at $4,740/oz after US-Iran ceasefire negotiations broke down over the weekend, sending crude oil prices surging and reigniting inflation fears. The dollar index strengthened, adding headwinds for dollar-priced bullion. Key support: $4,650–$4,700. A sustained break below $4,650 could accelerate selling toward $4,570. Bulls still point to gold's 46% year-over-year gain as evidence the macro trend remains intact.",
+          "COMEX gold fell to $4,809.05/oz on April 20, 2026, down 0.51% from the previous day, as news of a 10-day ceasefire between Israel and Iran assured the Strait of Hormuz would stay open for commercial shipping. Despite the daily dip, gold has risen 9.09% over the past month and remains up 40.03% year-over-year, reflecting strong macro trends. Key support sits at $4,750, with resistance near $4,850. Bulls continue to highlight central bank demand as a long-term driver.",
       },
       {
-        title: "Silver slides 2.5% — COMEX drops below $75 as crude surge pressures industrial sentiment",
-        date: "Apr 13, 2026",
+        title: "Silver surges 5% to $82/oz on geopolitical relief and industrial demand hopes",
+        date: "Apr 20, 2026",
         text:
-          "Silver fell 2.5% on Monday to below $75/oz as soaring crude oil raised concerns about industrial slowdown and rate-cut delays. COMEX silver is trading with a weak undertone, lacking conviction despite long-term structural support from solar, EV, and data-center demand. The Silver Institute projects a 67 million oz supply deficit in 2026. BofA, Citi, and Reuters all maintain aggressive $300 year-end silver targets as COMEX inventory continues to tighten.",
+          "Silver extended gains on Friday, climbing around 5% to reach $82/oz, buoyed by news of the Strait of Hormuz remaining open during a 10-day Israel-Iran ceasefire, easing supply chain fears. Despite a 15% retreat since the war began, silver's industrial demand from solar, EV, and data-center sectors continues to support long-term upside. The Silver Institute still projects a significant supply deficit for 2026. Analysts at BofA and Citi maintain bold targets above $100 for year-end.",
       },
       {
-        title: "Gold ATH was $5,595 on Jan 29 — now ~15% off peak as geopolitics dominate the tape",
-        date: "Apr 9, 2026",
+        title: "Gold down 15% from Jan ATH of $5,595 as market eyes next geopolitical trigger",
+        date: "Apr 17, 2026",
         text:
-          "Gold hit its all-time high of $5,595.42/oz on January 29, 2026 amid peak de-dollarization fears and central bank accumulation. Since then, the US-Iran conflict has whipsawed prices — surging on escalation, retreating on ceasefire hopes. Gold is now ~15% off that ATH, but year-over-year gains remain near 47%. Analysts see the pullback as a buying opportunity with major banks still targeting $5,400–$6,300 on central bank demand and long-term dollar weakness.",
+          "Gold remains ~15% off its all-time high of $5,595.42/oz set on January 29, 2026, amid de-dollarization momentum and central bank buying. Current price action reflects short-term geopolitical relief, with a dip to $4,809 as of April 20, yet year-over-year gains hold strong at 40%. Analysts view pullbacks as buying opportunities, with major banks targeting $5,400–$6,300 on sustained macro uncertainty and dollar softening.",
       },
     ],
     []
@@ -135,8 +135,8 @@ export default function App() {
                 </p>
                 <div className="mt-3 space-y-3 text-zinc-200/90">
                   <Bullet>Gold at $4,740 — dipping as US-Iran ceasefire talks collapse &amp; crude oil surges</Bullet>
-                  <Bullet>Silver below $75 — down 2.5% on macro pressure; 67M oz deficit still intact long-term</Bullet>
-                  <Bullet>Gold ATH $5,595 (Jan 29); now ~15% off peak — major banks target $5,400–$6,300</Bullet>
+                  <Bullet>Silver surges 5% to $82 — geopolitical calm boosts industrial demand outlook</Bullet>
+                  <Bullet>Gold down 15% from Jan ATH $5,595; banks still target $5,400–$6,300 on macro trends</Bullet>
                 </div>
 
                 <div className="brand-divider my-6" />
