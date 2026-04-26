@@ -29,22 +29,22 @@ export default function App() {
   const posts = useMemo(
     () => [
       {
-        title: "Gold falls to $4,809 as Strait of Hormuz remains open during ceasefire",
-        date: "Apr 20, 2026",
+        title: "Gold drops by Rs 28,000 in India on April 26, 2026",
+        date: "Apr 26, 2026",
         text:
-          "COMEX gold fell to $4,809.05/oz on April 20, 2026, down 0.51% from the previous day, as news of a 10-day ceasefire between Israel and Iran assured the Strait of Hormuz would stay open for commercial shipping. Despite the daily dip, gold has risen 9.09% over the past month and remains up 40.03% year-over-year, reflecting strong macro trends. Key support sits at $4,750, with resistance near $4,850. Bulls continue to highlight central bank demand as a long-term driver.",
+          "Gold prices in India saw a sharp decline of Rs 28,000 for 24K gold on April 26, 2026, catching the attention of investors and buyers amid global uncertainties. This significant drop reflects market volatility and potential shifts in economic conditions.",
       },
       {
-        title: "Silver surges 5% to $82/oz on geopolitical relief and industrial demand hopes",
-        date: "Apr 20, 2026",
+        title: "Gold prices near Rs 15,404 per gram for 24K in India",
+        date: "Apr 26, 2026",
         text:
-          "Silver extended gains on Friday, climbing around 5% to reach $82/oz, buoyed by news of the Strait of Hormuz remaining open during a 10-day Israel-Iran ceasefire, easing supply chain fears. Despite a 15% retreat since the war began, silver's industrial demand from solar, EV, and data-center sectors continues to support long-term upside. The Silver Institute still projects a significant supply deficit for 2026. Analysts at BofA and Citi maintain bold targets above $100 for year-end.",
+          "On April 26, 2026, retail gold prices in India are hovering near Rs 15,404 per gram for 24K purity and about Rs 14,120 per gram for 22K gold, while silver is trading at roughly Rs 2,60,000 per kilogram. These prices indicate current market trends for precious metals in major cities like Delhi, Mumbai, Chennai, and Kolkata.",
       },
       {
-        title: "Gold down 15% from Jan ATH of $5,595 as market eyes next geopolitical trigger",
-        date: "Apr 17, 2026",
+        title: "India gold premiums hit over 10-week high on tight supply",
+        date: "Apr 24, 2026",
         text:
-          "Gold remains ~15% off its all-time high of $5,595.42/oz set on January 29, 2026, amid de-dollarization momentum and central bank buying. Current price action reflects short-term geopolitical relief, with a dip to $4,809 as of April 20, yet year-over-year gains hold strong at 40%. Analysts view pullbacks as buying opportunities, with major banks targeting $5,400–$6,300 on sustained macro uncertainty and dollar softening.",
+          "Gold premiums in India climbed to their highest in over two-and-a-half months this week as supplies tightened, while buying interest picked up in China. This trend, reported on April 24, 2026, underscores ongoing supply constraints and regional demand dynamics for gold.",
       },
     ],
     []
